@@ -1,9 +1,66 @@
-import React from 'react'
+import { extendTheme } from "@chakra-ui/react";
+import font from "./typography/index"
+import styles from "./styles"
 
-export default function theme() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const theme = extendTheme({
+	colors: {
+		primary: {
+			50: "#e2f8ff",
+			100: "#c2e4ef",
+			200: "#9ed1e1",
+			300: "#79bed4",
+			400: "#56abc6",
+			500: "#3e92ad",
+			600: "#2f7287",
+			700: "#1e5161",
+			800: "#0c313c",
+			900: "#001218",
+		},
+		secondary: "#FF8882",
+		error: "#ff0000",
+		caption: "#1a202c",
+		divider: "#CDCDCD",
+		black: "#000000",
+		background: "#1A202C",
+		sonic_silver: "#767A7B",
+    },
+    font,
+	space: {
+		px: "1px",
+		0: "0",
+		0.5: "0.125rem",
+		1: "0.25rem",
+		1.5: "0.375rem",
+		2: "0.5rem",
+		2.5: "0.625rem",
+		3: "0.75rem",
+		3.5: "0.875rem",
+		4: "1rem",
+		5: "1.25rem",
+		6: "1.5rem",
+		7: "1.75rem",
+		8: "2rem",
+		9: "2.25rem",
+		10: "2.5rem",
+		12: "3rem",
+		14: "3.5rem",
+		16: "4rem",
+		20: "5rem",
+		24: "6rem",
+		28: "7rem",
+		32: "8rem",
+		36: "9rem",
+		40: "10rem",
+		44: "11rem",
+		48: "12rem",
+		52: "13rem",
+		56: "14rem",
+		60: "15rem",
+		64: "16rem",
+		72: "18rem",
+		80: "20rem",
+		96: "24rem",
+	},
+});
+
+export default theme;
