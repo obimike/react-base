@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import fonts from "./typography/index";
+// import { ButtonStyles as Button } from "./components/Button";
 import styles from "./styles";
 
 const theme = extendTheme({
@@ -73,6 +74,29 @@ const theme = extendTheme({
 		72: "18rem",
 		80: "20rem",
 		96: "24rem",
+	},
+	components: {
+		Button: {
+			baseStyle: {},
+			sizes: {
+				xl: {
+					h: "56px",
+					fontSize: "lg",
+					px: "32px",
+				},
+			},
+			variants: {
+				// Notice the far simpler structure
+				primary: {
+					bg: "primary",
+					color: "white",
+					_hover: {
+						bg: "secondary",
+						boxShadow: "md",
+					},
+				},
+			},
+		},
 	},
 });
 
