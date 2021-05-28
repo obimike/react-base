@@ -1,20 +1,8 @@
-import { Button, Center, HStack, Heading } from "@chakra-ui/react";
+// import Index from "./sample/Index";
+import Header from "./sample/Header";
 
 function App() {
-	return (
-		<Center m={100}>
-			<Heading mr={10}>Buttons</Heading>
-			<br />
-			<HStack>
-				<Button bg="primary.700" color="#fff">
-					Button
-				</Button>
-				<Button bg="secondary" color="#fff">
-					Button
-				</Button>
-			</HStack>
-		</Center>
-	);
+	return <Header />;
 }
 
 export default App;

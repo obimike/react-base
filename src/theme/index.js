@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
-import font from "./typography/index"
-import styles from "./styles"
+import fonts from "./typography/index";
+import styles from "./styles";
 
 const theme = extendTheme({
 	colors: {
@@ -16,15 +16,28 @@ const theme = extendTheme({
 			800: "#0c313c",
 			900: "#001218",
 		},
-		secondary: "#FF8882",
+		secondary: {
+			50: "#ffe4e1",
+			100: "#ffb5b2",
+			200: "#ff8680",
+			300: "#fe564e",
+			400: "#fe291c",
+			500: "#e51303",
+			600: "#b20c01",
+			700: "#800600",
+			800: "#4e0200",
+			900: "#1f0000",
+		},
 		error: "#ff0000",
 		caption: "#1a202c",
 		divider: "#CDCDCD",
 		black: "#000000",
 		background: "#1A202C",
 		sonic_silver: "#767A7B",
-    },
-    font,
+		highlight: "#00C9A7",
+		warning: "#FFC75F",
+	},
+	fonts,
 	space: {
 		px: "1px",
 		0: "0",
