@@ -1,30 +1,20 @@
-import {
-	Button,
-	Center,
-	Image,
-	HStack,
-	Text,
-	Heading,
-	Box,
-	Flex,
-	IconButton,
-	VStack,
-} from "@chakra-ui/react";
-import { MoonIcon, SunIcon, CloseIcon, LinkIcon } from "@chakra-ui/icons";
-import logo from "../logo.svg";
+import { VStack } from "@chakra-ui/react";
+
 import Header from "./Header";
-import Intro from "./Intro";
+// import Intro from "./Intro";
+// import Features from "./Features";
 import Examples from "./Examples";
 
-function visuals() {
+function Visuals() {
 	return (
 		<Header>
 			<VStack>
-				<Intro />
+				{/* <Intro /> */}
+				{/* <Features />s */}
 				<Examples />
 			</VStack>
 		</Header>
 	);
 }
 
-export default visuals;
+export default Visuals;

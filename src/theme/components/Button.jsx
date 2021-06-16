@@ -1,34 +1,47 @@
-import { darken, mode, whiten } from "@chakra-ui/theme-tools";
+// import { darken, mode, whiten } from "@chakra-ui/theme-tools";
 
 export const ButtonStyles = {
-	// style object for base or default style
 	baseStyle: {
-		_hover: {
-			// Notice the use of `mode` function to change color
-			// based on theme color mode
-			bg: mode(whiten("primary", 20), darken("primary", 20)),
-			boxShadow: "md",
-		},
+		fontWeight: "bold",
+		textTransform: "uppercase",
+		borderRadius: "8px",
 	},
-	// styles for different sizes ("sm", "md", "lg")
 	sizes: {
-		xl: {
-			h: "56px",
-			fontSize: "lg",
-			px: "32px",
+		sm: {
+			fontSize: "sm",
+			px: 4, // <-- px is short for paddingLeft and paddingRight
+			py: 3, // <-- py is short for paddingTop and paddingBottom
+		},
+		md: {
+			fontSize: "md",
+			px: 6, // <-- from the design system
+			py: 4, // <-- from the design system
 		},
 	},
-	// styles for different visual variants ("outline", "solid")
+
 	variants: {
-		"with-shadow": {
-			bg: "red.400",
-			boxShadow: "0 0 2px 2px #efdfde",
+		outline: {
+			border: "1px solid",
+			borderColor: "primary.700",
+			color: "primary.700",
+			bg: "transparent",
+			_hover: {
+				borderColor: "primary.500",
+				color: "primary.500",
+			},
 		},
-		// 4. We can override existing variants
-		solid: (props) => ({
-			bg: props.colorMode === "dark" ? "red.300" : "red.500",
-		}),
+		primary: {
+			bg: "primary.700",
+			color: "white",
+			_hover: {
+				bg: "primary.500",
+			},
+		},
 	},
-	// default values for `size` and `variant`
-	// defaultProps: {},
+
+	// The default size and variant values
+	defaultProps: {
+		size: "md",
+		variant: "primary",
+	},
 };

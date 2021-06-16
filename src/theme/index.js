@@ -1,34 +1,22 @@
 import { extendTheme } from "@chakra-ui/react";
-import fonts from "./typography/index";
-// import { ButtonStyles as Button } from "./components/Button";
-import styles from "./styles";
+import { ButtonStyles as Button } from "./components/Button";
+// import styles from "./styles";
 
 const theme = extendTheme({
 	colors: {
 		primary: {
-			50: "#e2f8ff",
-			100: "#c2e4ef",
-			200: "#9ed1e1",
-			300: "#79bed4",
-			400: "#56abc6",
-			500: "#3e92ad",
-			600: "#2f7287",
-			700: "#1e5161",
-			800: "#0c313c",
-			900: "#001218",
+			50: "#f5f9e6",
+			100: "#e4eac5",
+			200: "#d3dca3",
+			300: "#c1ce7f",
+			400: "#afc05c",
+			500: "#96a642",
+			600: "#758132",
+			700: "#535c23",
+			800: "#323713",
+			900: "#111300",
 		},
-		secondary: {
-			50: "#ffe4e1",
-			100: "#ffb5b2",
-			200: "#ff8680",
-			300: "#fe564e",
-			400: "#fe291c",
-			500: "#e51303",
-			600: "#b20c01",
-			700: "#800600",
-			800: "#4e0200",
-			900: "#1f0000",
-		},
+
 		error: "#ff0000",
 		caption: "#1a202c",
 		divider: "#CDCDCD",
@@ -38,7 +26,12 @@ const theme = extendTheme({
 		highlight: "#00C9A7",
 		warning: "#FFC75F",
 	},
-	fonts,
+	// styles,
+	fonts: {
+		body: "Work Sans, sans-serif",
+		heading: "Work Sans, serif",
+		mono: "Menlo, monospace",
+	},
 	space: {
 		px: "1px",
 		0: "0",
@@ -76,27 +69,7 @@ const theme = extendTheme({
 		96: "24rem",
 	},
 	components: {
-		Button: {
-			baseStyle: {},
-			sizes: {
-				xl: {
-					h: "56px",
-					fontSize: "lg",
-					px: "32px",
-				},
-			},
-			variants: {
-				// Notice the far simpler structure
-				primary: {
-					bg: "primary",
-					color: "white",
-					_hover: {
-						bg: "secondary",
-						boxShadow: "md",
-					},
-				},
-			},
-		},
+		Button,
 	},
 });
 

@@ -48,8 +48,9 @@ const Header = (props) => {
 				justify="space-between"
 				wrap="wrap"
 				w="100%"
-				mb={8}
 				p={8}
+				// pos="absolute"
+				// zIndex="1"
 				color="primary.500"
 				boxShadow="md"
 				alignItems="center"
