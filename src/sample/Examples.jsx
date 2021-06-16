@@ -15,7 +15,9 @@ function Examples() {
 		<VStack px={20}>
 			<VStack>
 				<VStack mb={4}>
-					<h2>Typography</h2>
+					<Heading size="2xl" fontWeight="medium">
+						Typography
+					</Heading>
 					<div>
 						<Heading as="h1">Headers</Heading>
 						<Flex alignItems="center">

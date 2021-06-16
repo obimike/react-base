@@ -11,7 +11,7 @@ import {
 
 function Intro() {
 	return (
-		<Box px={8}  mx="auto">
+		<Box px={8} mt="100px">
 			<Box
 				w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
 				mx="auto"
@@ -55,8 +55,7 @@ function Intro() {
 				>
 					<Button
 						as="a"
-						variant="solid"
-						bg='primary.600'
+						variant="primary"
 						display="inline-flex"
 						alignItems="center"
 						justifyContent="center"
@@ -75,7 +74,7 @@ function Intro() {
 					</Button>
 					<Button
 						as="a"
-						bg='secondary.500'
+						variant='outline'
 						display="inline-flex"
 						alignItems="center"
 						justifyContent="center"
@@ -99,8 +98,7 @@ function Intro() {
 				mx="auto"
 				mt={20}
 				textAlign="center"
-			>
-			</Box>
+			></Box>
 		</Box>
 	);
 }
