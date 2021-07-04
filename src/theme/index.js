@@ -1,76 +1,15 @@
 import { extendTheme } from "@chakra-ui/react";
-import { ButtonStyles as Button } from "./components/Button";
-// import styles from "./styles";
 
 const theme = extendTheme({
-	colors: {
-		primary: {
-			50: "#f5f9e6",
-			100: "#e4eac5",
-			200: "#d3dca3",
-			300: "#c1ce7f",
-			400: "#afc05c",
-			500: "#96a642",
-			600: "#758132",
-			700: "#535c23",
-			800: "#323713",
-			900: "#111300",
-		},
 
-		error: "#ff0000",
-		caption: "#1a202c",
-		divider: "#CDCDCD",
-		black: "#000000",
-		background: "#1A202C",
-		sonic_silver: "#767A7B",
-		highlight: "#00C9A7",
-		warning: "#FFC75F",
-	},
 	// styles,
 	fonts: {
 		body: "Work Sans, sans-serif",
 		heading: "Work Sans, serif",
 		mono: "Menlo, monospace",
 	},
-	space: {
-		px: "1px",
-		0: "0",
-		0.5: "0.125rem",
-		1: "0.25rem",
-		1.5: "0.375rem",
-		2: "0.5rem",
-		2.5: "0.625rem",
-		3: "0.75rem",
-		3.5: "0.875rem",
-		4: "1rem",
-		5: "1.25rem",
-		6: "1.5rem",
-		7: "1.75rem",
-		8: "2rem",
-		9: "2.25rem",
-		10: "2.5rem",
-		12: "3rem",
-		14: "3.5rem",
-		16: "4rem",
-		20: "5rem",
-		24: "6rem",
-		28: "7rem",
-		32: "8rem",
-		36: "9rem",
-		40: "10rem",
-		44: "11rem",
-		48: "12rem",
-		52: "13rem",
-		56: "14rem",
-		60: "15rem",
-		64: "16rem",
-		72: "18rem",
-		80: "20rem",
-		96: "24rem",
-	},
-	components: {
-		Button,
-	},
+	
+
 });
 
 export default theme;
