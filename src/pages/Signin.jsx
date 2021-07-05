@@ -51,8 +51,8 @@ function Signin() {
 	return (
 		<Flex height="100vh">
 			<Container p="8" maxW="lg" mt="8">
-				<VStack>
-					<Heading as="h3" size="xl" mb="8">
+				<VStack mb="2">
+					<Heading as="h3" size="xl" mb="4">
 						D-Interns
 					</Heading>
 					<Button
@@ -62,9 +62,11 @@ function Signin() {
 					>
 						Sign in with Google
 					</Button>
-					<Text fontSize="md" my="2">
-						or
-					</Text>
+					<Flex mt="2" justifyContent="space-between">
+						<Text fontSize="md" mt="2" color="gray.300">
+							or
+						</Text>
+					</Flex>
 				</VStack>
 
 				<form onSubmit={formik.handleSubmit}>
@@ -87,7 +89,7 @@ function Signin() {
 					<Box mb="4">
 						<Text fontSize="lg">Password</Text>
 						<InputGroup size="md">
-                            <Input
+							<Input
 								pr="4.5rem"
 								type={showPassword ? "text" : "password"}
 								placeholder="Enter password"

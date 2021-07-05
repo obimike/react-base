@@ -1,5 +1,5 @@
 {
-  "name": "react-base",
+  "name": "interns",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,5 +43,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Greetings, Welcome!",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obimike/interns.git"
+  },
+  "keywords": [
+    "interns"
+  ],
+  "author": "Obimike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obimike/interns/issues"
+  },
+  "homepage": "https://github.com/obimike/interns#readme"
 }
